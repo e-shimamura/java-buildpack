@@ -12,10 +12,10 @@ mkdir java
 cd java/
 
 mkdir -p $CACHE_DIR/
-mv * $CACHE_DIR/
+#mv * $CACHE_DIR/
 mv $CACHE_DIR/ .
 
-JAVA_DIR="${BUILDPACK_DIR}/download/java/1.8.0/"
+JAVA_DIR="${BUILDPACK_DIR}/download/jdk1.8.0_71"
 cp -rp  $JAVA_DIR .
 ls -la
 
