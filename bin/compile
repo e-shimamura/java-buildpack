@@ -6,8 +6,6 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 
 cd $BUILD_DIR
-pwd
-ls -la
 mkdir java
 cd java/
 
@@ -17,7 +15,10 @@ mv $CACHE_DIR/ .
 
 JAVA_DIR="${BUILDPACK_DIR}/download/jdk1.8.0_71"
 cp -rp  $JAVA_DIR .
+pwd
 ls -la
+
+ls -la /var/vcap/packages/dea_next/buildpacks/
 
 JAVA_HOME="$BUILD_DIR/java/jdk1.8.0_71"
 PATH=$PATH:$JAVA_HOME/bin
