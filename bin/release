@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-cat << EOF
+cat <<EOF
+---
 config_vars:
-    MYENV: myjava
 EOF
-
