@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env bash
 
 BIN_DIR=$(dirname $0)
 BUILDPACK_DIR=`cd $(dirname $0); cd ..; pwd`
