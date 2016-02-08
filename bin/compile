@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+shopt -s dotglob    # enables commands like 'mv *' to see hidden files
+set -e              # exit immediately if any command fails (non-zero status)
+
 BIN_DIR=$(dirname $0)
 BUILDPACK_DIR=`cd $(dirname $0); cd ..; pwd`
 BUILD_DIR=$1
